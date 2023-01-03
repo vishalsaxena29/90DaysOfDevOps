@@ -1,0 +1,52 @@
+#Author: - Vishal Saxena
+#TrainWithShubham Community
+#Day 1
+
+-What is DevOps ?
+
+According to me devops is the bridge which connects both dev 
+and operations teams work and efforts into a single structure 
+which enhance the flexibility and delivery of work faster and 
+more reliably. 
+
+Devops creates a culture of collab between developers and IT professionals
+It involves the use of range of tools and practices, such a version control systems,
+automated testing and deployment, monitoring and feedback, for the sucessfull 
+software development and deployment process.
+
+
+ - What is Automation, Scaling, Infrastructure ?
+
+Automation - As per my understanding it refers to automate the process with the help of 
+tools and processes without the need for human intervention.automation is often used to
+streamline and speed up the software development and delivery process. 
+This can include automating tasks such as building, testing, and deploying code, as well 
+as monitoring and feedback processes.  
+
+
+Scaling - In my point of view scaling refers the ability of a system, application or process to handle 
+increasing workload or increase in demand of usage of user which creates a huge imapact on servers , applications 
+and sometimes causes server crashes . In context of devops scaling involves both involve both vertical scaling (adding 
+more resources to a single system) and horizontal scaling (adding more systems to a network).
+
+
+Infrastructure - I think it refers to the underlying hardware and software systems that support 
+the development and operation of software applications. In the context of DevOps, infrastructure 
+can include everything from physical servers and networking equipment to virtualized environments 
+and cloud-based services. Managing infrastructure is a key aspect of DevOps, 
+as it enables developers to quickly and easily provision the resources they need to build and 
+deploy applications.
+
+
+ - Why DevOps is Important, etc ?
+
+Devops plays a crucial role in major sevral companied by providing faster integration and software delivery
+By bringing development and operations teams together and automating processes, 
+DevOps enables organizations to deliver software faster and more frequently. 
+This can help organizations respond more quickly to changing business needs and stay ahead of 
+competitors. 
+
+Increase in effeciency , better quality , greater agility and improved collaborations are the key features 
+of Devops.
+Overall, DevOps can help organizations deliver better software faster and more efficiently, while 
+also improving collaboration and communication between teams. 
