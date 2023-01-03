@@ -1,0 +1,67 @@
+#Author: - Vishal Saxena 💻
+#TrainWithShubham Community
+
+#Day 2
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. Check your present working directory.
+
+Syntax:- pwd
+(present working directory)
+
+Sample output
+
+vishalsaxena@vishals-MacBook-Air GIT_pre % pwd
+/Users/vishalsaxena/Desktop/Devops/GIT_pre
+
+================================================================
+
+2. List all the files or directories including hidden files.
+
+Syntax:- ls -a
+
+Sample output 
+.		..		Day2.txt	Day_1.txt
+
+And for ls -l command is used to list the files and directories in a directory in long format. When you use ls -l, you'll see the following information about each file and directory:
+Includes the following details 
+
+- File permissions
+- Number of hard links
+- Owner name
+- Group name
+- Size in bytes
+- Last modification time
+- File/directory name
+
+Syntax :- ls -l 
+
+Sample output 
+
+vishalsaxena@vishals-MacBook-Air GIT_pre % ls -l 
+total 16
+-rw-r--r--  1 vishalsaxena  staff   431 Jan  4 01:48 Day2.txt
+-rw-r--r--  1 vishalsaxena  staff  2619 Jan  4 00:03 Day_1.txt
+
+================================================================
+
+3. Create a nested directory A/B/C/D/E
+
+# make a nested directory
+syntax - mkdir -p A/B/C/D
+
+Use the below command to see the nested directory
+
+Sample output 
+vishalsaxena@vishals-MacBook-Air GIT_pre % tree        
+.
+├── A
+│   └── B
+│       └── C
+│           └── D
+├── Day2.txt
+└── Day_1.txt
+
+================================================================
+
+
+
