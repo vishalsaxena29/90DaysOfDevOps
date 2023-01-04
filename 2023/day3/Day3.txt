@@ -1,0 +1,162 @@
+#Author: - Vishal Saxena 💻
+#TrainWithShubham Community
+
+#Day 3 Task: Basic Linux Commands
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Task: What is the linux command to
+
+1. To view what's written in a file.
+
+Ans- With the help of cat command you can see whats wrriten into the file.
+
+syntax: - cat abc.txt
+====================================================================================================
+2. To change the access permissions of files. 
+
+Ans:- chmod +rwx <filename.txt> or username
+
+r = read 
+w = written
+x = execution
+
+====================================================================================================
+3. To check which commands you have run till now. 
+
+Ans- history command help us to find the list of commands which we have used uptill now.
+syntax - history 
+vishalsaxena@vishals-MacBook-Air GIT_pre % history
+ 1003  cd DEVOPS
+ 1004  ls -l
+ 1005  cd GIT/
+ 1006  cd GIT/
+ 1007  ls 
+ 1008  cd /GIT
+ 1009  pwd
+ 1010  cd GIT
+ 1011  cd GIT_pre
+ 1012  touch fruits.txt; cat fruits.txt
+ 1013  echo -e "Apple\nMango\nBanana\nCherry\nKiwi\nOrange\nGuava" | tee -a devops.txt
+ 1014  head 3 devops.txt
+ 1015  head devops.txt
+ 1016  head -3 devops.txt
+ 1017  tail -3 devops.txt
+ 1018  touch colors.txt and cat colors.txt
+====================================================================================================
+4. To remove a directory/ Folder.
+Ans - sudo rm -r directory name or directory path
+
+rm = remove 
+-r = recurssive delete 
+sudo = execute the command as root username
+====================================================================================================
+5. To create a fruits.txt file and to view the content. 
+Ans - 
+touch fruits.txt
+cat fruits.txt
+
+OR you can use the above syntax in one line like 
+
+touch fruits.txt; cat fruits.txt
+====================================================================================================
+6. Add content in devops.txt (One in each line) - Apple, Mango, Banana, Cherry, Kiwi, Orange, Guava.(echo -e "Apple\nMango\nBanana\nCherry\nKiwi\nOrange\nGuava" | tee -a myfile.txt)
+
+Ans - 
+
+vishalsaxena@vishals-MacBook-Air GIT_pre % touch devops.txt                  
+vishalsaxena@vishals-MacBook-Air GIT_pre % echo "Apple\nMango\nBanana\nCherry\nKiwi\nOrange\nGuava">> devops.txt
+
+OR
+
+we can use the following syntax 
+
+echo -e "Apple\nMango\nBanana\nCherry\nKiwi\nOrange\nGuava" | tee -a devops.txt 
+Apple
+Mango
+Banana
+Cherry
+Kiwi
+Orange
+Guava
+
+====================================================================================================
+7. To Show only top three fruits from the file. 
+Ans - We can use the "head -3 devops.txt" command
+
+vishalsaxena@vishals-MacBook-Air GIT_pre % head -3 devops.txt
+Apple
+Mango
+Banana
+
+====================================================================================================
+8. To Show only bottom three fruits from the file.
+Ans - tail -3 devops.txt
+
+vishalsaxena@vishals-MacBook-Air GIT_pre % tail -3 devops.txt
+Kiwi
+Orange
+Guava
+
+
+====================================================================================================
+9. To create another file Colors.txt and to view the content.
+Ans - 
+touch colors.txt
+cat colors.txt
+
+OR
+
+vishalsaxena@vishals-MacBook-Air GIT_pre % touch colors.txt and cat colors.txt
+====================================================================================================
+10. Add content in Colors.txt (One in each line) - Red, Pink, White, Black, Blue, Orange, Purple, Grey.
+
+Ans - echo -e "Red\nPink\nWhite\nBlack\nBlue\nOrange\nPurple\nGrey" >> colors.txt
+
+vishalsaxena@vishals-MacBook-Air GIT_pre % echo -e "Red\nPink\nWhite\nBlack\nBlue\nOrange\nPurple\nGrey" >> colors.txt
+vishalsaxena@vishals-MacBook-Air GIT_pre % cat colors.txt
+Red
+Pink
+White
+Black
+Blue
+Orange
+Purple
+Grey
+
+
+====================================================================================================
+11. To find the difference between fruits.txt and Colors.txt file.(diff command )
+
+Ans - diff colors.txt devops.txt -y 
+vishalsaxena@vishals-MacBook-Air GIT_pre % diff colors.txt devops.txt -y 
+Red							      |	Apple
+Pink							      |	Mango
+White							      |	Banana
+Black							      |	Cherry
+Blue							      |	Kiwi
+Orange								Orange
+Purple							      |	Guava
+Grey							      <
+vishalsaxena@vishals-MacBook-Air GIT_pre % diff colors.txt devops.txt   
+1,5c1,5
+< Red
+< Pink
+< White
+< Black
+< Blue
+---
+> Apple
+> Mango
+> Banana
+> Cherry
+> Kiwi
+7,8c7
+< Purple
+< Grey
+---
+> Guava 
+
+
+====================================================================================================
+
+
