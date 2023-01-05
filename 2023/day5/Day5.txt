@@ -1,0 +1,66 @@
+#owner : vishal saxena
+#Day 5 
+
+Day 5 Task: Advanced Linux Shell Scripting for DevOps Engineers with User management
+
+1. You have to do the same using Shell Script i.e using either Loops or command with start day and end day variables using arguments -
+So Write a bash script createDirectories.sh that when the script is executed with three given arguments (one is directory name and second is start number of directories and third is the end number of directories ) it creates specified number of directories with a dynamic directory name.
+
+Ans : - There is 2 ways to create a dynamic script for the above task 
+
+1st without using the loops which i create by the name of createDirectories1.sh
+
+
+#!/bin/bash
+
+echo "$1"
+echo "$2"
+echo "$3"
+
+eval mkdir $1{$2..$3}
+
+
+2nd by the help of for loop which i create by the name of createDirectories2.sh
+
+#!/bin/bash
+
+numberstart=$2
+numend=$3
+
+for (( i=$numberstart ; i<=$numend ; i++ ))
+do 
+    mkdir $1$i
+done    
+
+And for executing the above script we need the following command and pass the arguments
+
+$bash createDirectories1.sh day 1 5
+
+
+2. Create a Script to backup all your work done till now.
+Backups are an important part of DevOps Engineers day to Day activities The video in References will help you to understand How a DevOps Engineer takes backups (it can feel a bit difficult but keep trying, Nothing is impossible.) 
+
+Backup_script.sh
+
+#!/bin/bash
+# Folder Backup Script
+
+date_var=$(date +"%Y.%m.%d.%H.%M")
+location="/home/ubuntu/Desktop/Linux/backups"
+
+tar czf /home/ubuntu/Desktop/Linux/Backup-$date_var.tar.gz /home/ubuntu/Desktop/Linux/backups
+
+$bash backup_script.sh
+
+3. Read About Cron and Crontab, to automate the backup Script
+Cron is the system's main scheduler for running jobs or tasks unattended. A command called crontab allows the user to submit, edit or delete entries to cron. A crontab file is a user file that holds the scheduling information.
+
+Ans-> 42 20 5 * * bash /home/ubuntu/Desktop/Linux/mydirs/backup_script.sh
+
+4.Create 2 users and just display their Usernames
+
+Ans - sudo adduser vishal-devops
+	  sudo adduser vishal-developer
+      
+
+
